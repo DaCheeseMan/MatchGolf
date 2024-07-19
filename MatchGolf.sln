@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchGolf", "MatchGolf.csproj", "{1AAA5105-6924-42AE-9807-9E1198FCAE8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AAA5105-6924-42AE-9807-9E1198FCAE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AAA5105-6924-42AE-9807-9E1198FCAE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AAA5105-6924-42AE-9807-9E1198FCAE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AAA5105-6924-42AE-9807-9E1198FCAE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC223F7A-2A12-4D90-A34A-4CEA8AF06361}
+	EndGlobalSection
+EndGlobal
