@@ -4,6 +4,7 @@ using MatchGolf.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MatchGolf.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240724104303_InitialDataModel")]
+    partial class InitialDataModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -59,7 +62,7 @@ namespace MatchGolf.Migrations
 
                     b.HasIndex("TournamentId");
 
-                    b.ToTable("Matches", (string)null);
+                    b.ToTable("Matches");
                 });
 
             modelBuilder.Entity("MatchGolf.Data.Score", b =>
@@ -180,7 +183,7 @@ namespace MatchGolf.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Scores", (string)null);
+                    b.ToTable("Scores");
                 });
 
             modelBuilder.Entity("MatchGolf.Data.Team", b =>
@@ -197,7 +200,7 @@ namespace MatchGolf.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Teams", (string)null);
+                    b.ToTable("Teams");
                 });
 
             modelBuilder.Entity("MatchGolf.Data.Tournament", b =>
@@ -214,7 +217,7 @@ namespace MatchGolf.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tournaments", (string)null);
+                    b.ToTable("Tournaments");
                 });
 
             modelBuilder.Entity("MatchGolf.Data.User", b =>
@@ -435,7 +438,7 @@ namespace MatchGolf.Migrations
 
                     b.HasIndex("TournamentsId");
 
-                    b.ToTable("TeamTournament", (string)null);
+                    b.ToTable("TeamTournament");
                 });
 
             modelBuilder.Entity("MatchGolf.Data.Match", b =>
